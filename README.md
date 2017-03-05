@@ -4,6 +4,10 @@
     <add name="examen" connectionString="SERVER=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=LAPTOP-UL0LQ92T)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=XE)));uid=system;pwd=admin;" />
   </connectionStrings>
   
+   string ConnectionString = WebConfigurationManager.ConnectionStrings["examen"].ConnectionString;
+    OracleConnection connection;
+    OracleCommand command;
+  
   [WebMethod]
     public string loggin(string u, string p, int perfil)
     {
