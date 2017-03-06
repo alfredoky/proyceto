@@ -1,4 +1,0 @@
-ServiceReference1.ServiceSoapClient ws = new ServiceReference1.ServiceSoapClient();
-        System.Data.DataSet ds = ws.getData2();
-        
-        
